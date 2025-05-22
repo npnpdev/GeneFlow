@@ -71,17 +71,33 @@ Narzędzia raportują wpływ liczby wątków i iteracji Monte Carlo na czas i do
 ## Struktura projektu
 
 ```text
-/src
-  /main/java
-    /engine         -> logika Legacy Index
-    /model          -> klasy danych
-    /network        -> klient/serwer TCP
-    /persistence    -> repozytoria i encje JPA
-    /threading      -> zadania wielowątkowe
-    /utils          -> narzędzia i formatowanie
-  /test/java       -> testy jednostkowe
-/pom.xml           -> konfiguracja Maven
-/README.md         -> dokumentacja
+src/
+  main/
+    java/
+      CalculationThread.java
+      Client.java
+      ClientHandler.java
+      DefaultResultFormatter.java
+      Family.java
+      InMemoryPersonRepository.java
+      Main.java
+      MainDB.java
+      Person.java
+      PersonComparator.java
+      PersonController.java
+      PersonDAO.java
+      PersonDTO.java
+      PersonRepository.java
+      QueryService.java
+      ResultFormatter.java
+      ResultManager.java
+      Server.java
+      TaskManager.java
+  test/
+    java/
+      (testy jednostkowe dla powyższych komponentów)
+pom.xml            -> konfiguracja Maven
+README.md          -> dokumentacja
 ```
 
 ## Przykładowe wyniki
